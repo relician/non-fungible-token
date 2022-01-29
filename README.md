@@ -17,8 +17,9 @@ NFT 관련 서비스는 위에서 DApp에 해당하는 것으로 보이기 때�
 <br/>
 <br/>
 --- 여기서부터는 Etherium 또는 그 계열인 Klaytn을 기준으로 작성하겠습니다.<br/>
+
 ## NFT 관련 서비스를 제공하기 위해 개발되어야 하는 내용
-- NFT 표준 Interface 기반 Smart Contract<br/> 아래의 표준 interface를 따르는 Smart Contract를 개발하고 Blockchain에 배포함으로써 Token을 민팅 (minting - 발행, 생성)할 수 있습니다.
+- NFT 표준 Interface 기반 Smart Contract<br/> 아래의 표준 interface를 따르는 Smart Contract를 개발하고 Blockchain에 배포함으로써 Token을 민팅 (minting - 발행, 생성)할 수 있습니다.<br/>
     - ERC 20 , ERC 721<br/>
 ERC 20의 컨셉은 누가, 얼마나 Token을 가지고 있는지?를 관리하는 내용을 담고 있고,<br/>
 ERC 721의 컨셉은 누가, 어떤 Token을 가지고 있으며, 각각의 Token이 어떤 Metadata를 가지고 있는지? 를 관리하는내용을 담고 있습니다.<br/>
