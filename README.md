@@ -22,12 +22,19 @@ NFT 관련 서비스는 위에서 DApp에 해당하는 것으로 보이기 때�
 - 개발용 Blockchain 설치 및 네트워크 구축
   - Etherium이나 Klaytn을 추천 드립니다.
   - EOS는 또 개념이 달라요.
-- Smart Contract 개발 언어: Solidity (Etherium, Klaytn) , C++ (EOS) <br/> C++이 흔히 알고 계시는 문법이 아닙니다. WebAsmb (웹 어셈블리로 컴파일 되는 거라 문법이 전혀 달라요)
-- Smart Contract 관리 계정: Contract 배포에도 수수료가 들어가기 때문에 외부소유계정 (EOA)가 있어야 합니다.
+- Smart Contract 개발 언어
+  - Solidity (Etherium, Klaytn) https://docs.soliditylang.org/en/latest/
+  - C++ (EOS - 비추천)
+- Smart Contract 관리 계정<br/> Contract 배포에도 수수료가 들어가기 때문에 외부소유계정 (EOA)가 있어야 합니다.
+- Wallet<br/> 서비스 이용자의 Address와 Private Key를 관리 해주면서, Smart Contract 연동 시 Signature를 생성하는 기능을 제공하는 프로그램 또는 모듈.
 - Application: UI 및 Smart Contract 연동 프로그램. 
   - Web: HTML, Javascript 필수, Wallet 연동 시 Web3.js 모듈 사용 필수, Wallet 사용 하지 않으면 거의 불가하다 보시면 됩니다.
-  - App: App은 잘 몰라요.. 
-- Wallet: 서비스 이용자의 Address와 Private Key를 관리 해주면서, Smart Contract 연동 시 Signature를 생성하는 기능을 제공하는 프로그램 또는 모듈.
+  - App: App은 잘 몰라요.. Wallet 연동 하는 경우도 있는데 자체 개발하는 경우도 많다고 합니다.
+- Back-office: 서비스 컨트랙트의 배포, 서비스 상태 모니터링, 토큰의 발행/소각 등의 관리, 거래소 연동 등을 생각하면 필요하지 않을까 생각됩니다.
+
+![image](https://user-images.githubusercontent.com/37832355/151664256-244686d0-bed3-42a3-aa19-d11b090936e6.png)
+
+
 
 ## NFT 관련 서비스를 제공하기 위해 개발되어야 하는 내용
 - NFT 표준 Interface 기반 Smart Contract<br/>
@@ -41,4 +48,5 @@ ERC 721의 컨셉은 누가, 어떤 Token을 가지고 있으며, 각각의 Toke
 예시로 여기 링크를 한번 훑어 봐 주세요. https://brunch.co.kr/@curg/20<br/>
 - NFT 서비스와 연결될 UI <br/>
 이 UI에는 Wallet 기능 또는 연동 기능이 포함되어 있어야 하며, Wallet의 Address가 보유한 Collection 들에 대한 관리 기능이 구현되어야 합니다.<br/>
+- BackOffice
 부가적으로 Back-end를 구축하여 Smart Contract가 제공하지 못하는 기능을 제공할 수도 있습니다.
