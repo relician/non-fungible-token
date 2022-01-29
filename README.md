@@ -24,7 +24,9 @@ NFT 관련 서비스는 위에서 DApp에 해당하는 것으로 보이기 때�
 - Smart Contract 개발 언어
   - Solidity (Etherium, Klaytn) https://docs.soliditylang.org/en/latest/
   - C++ (EOS - 비추천)
-- Wallet<br/> Blockchain 이용자의 Address와 Private Key를 관리 해주면서, Smart Contract 연동 시 Signature를 생성하는 기능을 제공하는 프로그램 또는 모듈.
+- Wallet<br/> Blockchain 이용자의 Address와 Private Key를 관리 해주면서,<br/> Smart Contract 연동 시 Signature를 생성하는 기능을 제공하는 프로그램 또는 모듈.
+  - Metamask: Etherium 연동 공식 Wallet 
+  - Kaikas: Klaytn 연동 공식 Wallet 
 - Smart Contract 관리 계정<br/> Contract 배포에도 수수료가 들어가기 때문에 외부소유계정(EOA) 필요합니다.
 - Application: UI 및 Smart Contract 연동 프로그램. 
   - Web: HTML, Javascript 필수, 대부분이 Wallet 확장 프로그램을 연동하기에 Web3.js 모듈 사용은 필수, Wallet 확장 프로그램을 사용 하지 않는 경우도 있다 합니다.
